@@ -288,6 +288,52 @@ body {
 }
 /* -----------------------------------------END-hero-container--------------------------------------------------------- */
 
+/* ---------------------------------------------items-list--------------------------------------- */
+
+/* ---------------------------------------------card-container--------------------------------------- */
+
+.card-container{border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+/* ---------------------------------------------END-card-container--------------------------------------- */
+
+/* left-card-container */
+
+.left-card-container{
+    border: 2px solid black;
+    padding: 0 20px;
+
+    width: 20%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.left-card-container p{
+    font-weight: bold;
+}
+
+/* right-card-container */
+.right-card-container{
+    border: 2px solid black;
+
+    width: 70%;
+    height: auto;
+}
+
+.top-right-card-container{
+    display: flex;
+    justify-content: space-between;
+}
+/* ---------------------------------------------END-items-list--------------------------------------- */
+
+
 /* -------------------------media-query-------------------------- */
 
 @media screen and (max-width: 1060px) {
