@@ -326,11 +326,12 @@ body {
 
     grid-area: hero-container;
 
-    background: url('./images/hero-bg.jpg');
-    background-position: center center;
+
+    /* background: url('./videos/hero.mp4'); */
+    /* background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 
     color: white;
 
@@ -342,16 +343,19 @@ body {
 
     width: auto;
     height: 200px;
+    overflow: hidden;
 
 }
 
 .blurring-container {
     border-radius: 15%;
     background: rgba(3, 3, 3, 0.01);
-    backdrop-filter: blur(4px);
-    height: 60%;
+    backdrop-filter: blur(10px);
+    height: 100px;
     width: 180px;
 
+    z-index: 1;
+    position: absolute;
 
     display: flex;
     flex-direction: row;
@@ -368,7 +372,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.hero-container video{
+    opacity: 0.8;
+}
 .content-hero h1 {
     font-size: 40px;
     letter-spacing: 3px;
@@ -382,8 +388,9 @@ body {
 }
 
 .content-hero>p>a:hover {
-    color: rgb(141, 3, 3);
+    color: rgb(216, 57, 57);
     transform: scaleX(2);
+    font-weight: 500;
 }
 
 /* -----------------------------------------END-hero-container--------------------------------------------------------- */
