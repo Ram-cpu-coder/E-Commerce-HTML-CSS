@@ -20,8 +20,16 @@
 </head>
 
 <body>
+<!-- 
+    <input type="checkbox" name="check-theme" id="theme" style="display: none;">
+    
+    <div class="dark-theme-container">
+        <div class="theme-changer">
+            <label for="theme"><i class="fa-solid fa-circle-half-stroke"></i></label>       
+        </div>
+    </div>  -->
     <!-- .......................................home.................................. -->
-    <section id="home">
+    <section id="home" class="home">
         <div class="main-container">
 
             <!-- -------------------------------------top-bar---------------------------------------- -->
@@ -53,19 +61,19 @@
             <!-- ------------------------------END-top-bar-------------------------------------- -->
 
             <!-- ---------------------------------nav-bar---------------------------------------- -->
-            <div class="nav-bar" id="navbar" onscroll="">
+            <div class="nav-bar" id="navbar">
                 <div class="left-nav-bar">
                     <div class="logo-left-nav-bar">
-                        <h1 id="logo"><a href="">NEPALSTORE</a></h1>
+                        <h1 id="logo"><a href="#">NEPALSTORE</a></h1>
                     </div>
 
                     <div class="nav-links-left-nav-bar">
                         <ul class="ul">
-                            <li class="li"><a href="" class="a">Home</a></li>
-                            <li class="li"><a href="" class="a">Pages</a></li>
-                            <li class="li"><a href="" class="a">Shop</a></li>
+                            <li class="li"><a href="#" class="a">Home</a></li>
+                            <li class="li"><a href="#items-list" class="a">Shop</a></li>
+                           
                             <li class="li"><a href="" class="a">Blog</a></li>
-                            <li class="li"><a href="" class="a">Elements</a></li>
+                            <li class="li"><a href="#footer" class="a">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -82,15 +90,15 @@
                         <i class="fa-regular fa-heart"></i>
                         <div class="cart">
                             <i class="fa-solid fa-cart-shopping"></i>
-                            <p>($0)</p>
+                            <p class="total-amount">($0)</p>
                         </div>
 
                     </div>
 
                     <!-- ----------------------------ham-burger----------------------------------------- -->
-                    <div class="hamburger" style="display: none;">
-                        <i class="fa-solid fa-bars"></i>
-                        <i class="fa-solid fa-xmark"></i>
+                    <div class="hamburger">
+                        <label for="menu"><i class="fa-solid fa-bars"></i></label>
+                        <input type="checkbox" name="checked" id="menu" style="display: none;">
                     </div>
 
                     <!-- -------------------------------------END-ham-burger--------------------------------------------- -->
@@ -98,7 +106,7 @@
 
             </div>
             <!-- -----------------------------------------End-nav-bar---------------------------------- -->
-
+           
         </div>
 
         <!-- -----------------------------hero-part------------------------------------- -->
@@ -109,11 +117,11 @@
 
                     <h1>Shop</h1>
                     <p>
-                        <a href="">
+                        <a href="#">
                             Home
                         </a>
                         /
-                        <a href="">
+                        <a href="#items-list">
                             Shop
                         </a>
                     </p>
@@ -126,7 +134,7 @@
     <!-- --------------------------------------------END - home--------------------------------------- -->
 
 
-    <section id="items-list">
+    <section id="items-list" class="items-list">
         <div class="card-container">
             <div class="left-card-container">
                 <div class="category">
@@ -179,11 +187,21 @@
                         <p>Showing 1-12 of 57 results</p>
                     </div>
 
-                    <div class="sorting">
+                    <!-- <div class="sorting">
                         <button class="select">Default Sorting
                             <i class="fa-solid fa-angle-down"></i>
                         </button>
-                    </div>
+                    </div> -->
+
+                    <select class="sorting">
+                        <option value="test" class="option">Default sorting</option>
+                        <option value="test" class="option">Sort by popularity</option>
+                        <option value="test" class="option">Sort by average rating</option>
+                        <option value="test" class="option">Sort by latest</option>
+                        <option value="test" class="option">Sort by price: low to high</option>
+                        <option value="test" class="option">Sort by price:high to low</option>
+
+                    </select>
 
                 </div>
 
@@ -567,7 +585,7 @@
 
 
     <!-- ----------------------------------------------------footer---------------------------------------------- -->
-    <section id="footer">
+    <section id="footer" class="footer">
         <div class="footer">
             <div class="footer-template">
                 <div class="call-center">
@@ -619,6 +637,7 @@
                         <p id="five">Contact Us</p>
                         <p id="six">Order Tracking</p>
                     </div>
+                    
                     <div class="head-footer-links">
                         <p id="seven" class="header">Customer Service</p>
                         <p id="eight">My Account</p>
@@ -645,7 +664,9 @@
                         </div>    
                         <div class="email-icon">
                             <input type="email" id="email" placeholder="Your Email Address">
-                            <i class="fa-regular fa-paper-plane"></i>
+                            <div class="send-icon">
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
                         </div>
                         <div class="signup-description">
                             <p>
@@ -653,7 +674,11 @@
                             </p>
                         </div>
 
-                        <div class="social-icons"></div>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com"> <img src="./social apps/facebook.png"> </a>
+                            <a href="https://www.instagram.com"> <img src="./social apps/instagram.png"> </a>
+                            <a href="https://www.whatsapp.com"> <img src="./social apps/whatsapp.png"> </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -661,9 +686,27 @@
 
 
             <div class="copyright">
+                <hr>
+                <div class="copyright-payment-method">
 
+                    <div class="copyright-para">
+                        © 2024, All Rights Reserved
+                    </div>
+                    
+                    <div class="payment-methods">
+                        <img src="./payments/visa.png"> 
+                        <img src="./payments/mastercard.png"> 
+                        <img src="./payments/paypal.png"> 
+                        <img src="./payments/american-express.png"> 
+                    </div>
+                </div>
             </div>
 
+        </div>
+    </section>
+    <section class="go-up">
+        <div class="fixed-button">
+            <a href="#"> <i class="fa-solid fa-circle-up"></i> </a>
         </div>
     </section>
 
