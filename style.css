@@ -327,11 +327,11 @@ body {
     grid-area: hero-container;
 
 
-    /* background: url('./videos/hero.mp4'); */
-    /* background-position: center center;
+    background: url('./images/hero-bg.png');
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; */
+    background-attachment: fixed;
 
     color: white;
 
@@ -372,9 +372,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.hero-container video{
-    opacity: 0.8;
-}
+
 .content-hero h1 {
     font-size: 40px;
     letter-spacing: 3px;
